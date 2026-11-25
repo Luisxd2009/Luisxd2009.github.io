@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Rubik, sans-serif;
+    line-height: 1.6;
+    color: #cbd5e1;
+    background-color: #0b0f19;
+}
+header{
+    background-color: #0f172a;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+nav a{
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+#hero{
+    height: 100vh;
+    background: linear-gradient(rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.85)), url('img/img4.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #f8fafc;
+}
+#hero p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #94a3b8;
+}
+.cta-button{
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.cta-button:hover{
+    background: #2563eb;
+}
+#artistas{
+    padding: 6rem 2rem;
+    background-color: #0f172a;
+}
+
+#artistas h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #f8fafc;
+}
+
+.artistas-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.artista-card{
+    background-color: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border: 1px solid #334155;
+}
+.artista-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.artista-card h3 {
+    padding: 1rem;
+    text-align: center;
+    color: #f8fafc;
+}
+.artista-card p{
+    padding: 0 1rem 1rem;
+    text-align: center;
+    color: #94a3b8;
+}
+
+#entradas{
+    padding: 6rem 2rem;
+    background-color: #0b0f19;
+}
+#entradas h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #f8fafc;
+}
+.entradas-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.entrada-card{
+    background-color: #1e293b;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    border: 1px solid #334155;
+}
+.entrada-card.destacada{
+    background: linear-gradient(145deg, #1e1b4b, #0f172a);
+    border: 1px solid #6366f1;
+    color: white;
+}
+.entrada-card h3{
+    margin-bottom: 1rem;
+    color: #f8fafc;
+}
+.precio{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 1rem;
+}
+.entrada-card.destacada .precio {
+    color: #818cf8;
+}
+.entrada-card ul{
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+.entrada-card li{
+    margin-bottom: .5rem;
+    color: #cbd5e1;
+}
+.entrada-card button{
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.entrada-card.destacada button {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+.entrada-card button:hover{
+    opacity: 0.9;
+}
+footer{
+    background-color: #070a12;
+    border-top: 1px solid #1e293b;
+    padding-bottom: 2rem;
+}
+.footer-content{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.footer-section h4{
+    margin-bottom: 1rem;
+    color: #f8fafc;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.social-links a{
+    color: #94a3b8;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #38bdf8;
+}
+.footer-section{
+    color: #94a3b8;
+}
+.footer-button{
+    text-align: center;
+    padding: 2rem;
+    background-color: transparent;
+    color: #64748b;
+}
+
+/* Formulario corregido sin solapamientos */
+.footer-form{
+    margin: 2rem auto;
+    max-width: 520px;
+    padding: 2rem;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-top: 4px solid #3b82f6;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+.footer-form h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: #f8fafc;
+}
+
+.form-subtitulo {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+.form-feria {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    margin: 0;
+}
+
+.input-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: left;
+}
+
+.input-grupo label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+.form-feria input,
+.form-feria textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #0b0f19;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    margin-right: 0;
+}
+
+.form-feria input::placeholder,
+.form-feria textarea::placeholder {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.form-feria input:focus,
+.form-feria textarea:focus {
+    border-color: #3b82f6;
+}
+
+.form-feria textarea {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.btn-enviar-form {
+    margin-top: 0.5rem;
+    padding: 12px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-enviar-form:hover {
+    background: #2563eb;
+}
+
+@media (max-width:430px) {
+    header{
+        position: static;
+    }
+    nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
